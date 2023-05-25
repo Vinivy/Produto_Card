@@ -1,5 +1,5 @@
  @import url('https://fonts.googleapis.com/css2? family=Lato:wght@300;400&family=Open+Sans:wght@300;400;500&display=swap');
- @import url('https://fonts.googleapis.com/css2? family=Crimson+Pro:wght@600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?display=swap');
 
 * {
   margin: 0;
@@ -33,15 +33,25 @@ main {
   height: fit-content;
 }
 
+.rodate {
+  position: relative;
+
+  cursor: pointer;
+  float: right;
+
+  background-color: transparent;
+}
+
 #infor {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
 
   height: fit-content;
   width: fit-content;
   color: #fff;
+
+  gap: 10px;
 }
 
 #infor p {
@@ -51,14 +61,18 @@ main {
   font-size: 15px;
 
   color: #271A45;
+
+  margin: 30px 0 0 0;
 }
 
 #infor h1 {
   font-family: 'Crimson Pro';
-  font-style: italic;
+  font-style: normal;
+  line-height: 32px;
   font-weight: 600;
   font-size: 32px;
-  color: black;
+
+  color: #271A45;
 }
 
 #infor h2 {
@@ -70,16 +84,32 @@ main {
   color: #271A45;
 }
 
-button {
+.adc {
   width: 148px;
   height: 32px;
 
-  border: 0.5px solid #271A45;
+  border: 1px solid #271A45;
 
-  border-radius: 999px;
+  margin: 30px 0 0 0;
 
   background-color: transparent;
-  border-radius: 20%;
+  border-radius: 15px;
 
-  color: #fff;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+
+  color:  #271A45;
+
+  transition: 0.50s;
+}
+
+.adc:hover {
+  cursor: pointer;
+
+  transition: 0.50s;
+
+  background-color: #271A45;
+  color: #D9CDF7;
 }
