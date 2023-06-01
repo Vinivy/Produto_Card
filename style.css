@@ -1,6 +1,3 @@
- @import url('https://fonts.googleapis.com/css2? family=Lato:wght@300;400&family=Open+Sans:wght@300;400;500&display=swap');
- @import url('https://fonts.googleapis.com/css2?display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -22,30 +19,64 @@ body {
 
 main {
   display: flex;
-
   width: 70%;
-  gap: 12px;
 }
 
 #picture {
-  border: 1px solid black;
+  position: fixed;
   width: fit-content;
   height: fit-content;
 }
 
-.rodate {
+.botoes {
   position: relative;
+  left: 25rem;
+  top: 10px;
+  height: fit-content;
+  width: fit-content;
+}
 
+.buttonX {
+  display: none;
   cursor: pointer;
-  float: right;
+  position: relative;
+  
 
+  border: 0;
   background-color: transparent;
+}
+
+.buttonX img {
+  width: 33px;
+  height: 22px;
+}
+
+.rodate {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+
+.rodete img {
+  width: 33px;
+  height: 22px;
+}
+
+.imgs {
+  float: left;
+  width: 449px;
+  height: 253px;
 }
 
 #infor {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  position: relative;
+  left: 440px;
+  float: right;
+  
 
   height: fit-content;
   width: fit-content;
@@ -66,10 +97,10 @@ main {
 }
 
 #infor h1 {
-  font-family: 'Crimson Pro';
+  font-family: 'Crimson pro';
   font-style: normal;
   line-height: 32px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 32px;
 
   color: #271A45;

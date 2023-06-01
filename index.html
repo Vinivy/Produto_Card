@@ -3,6 +3,13 @@
   <head>
     <link rel="stylesheet" href="style.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,18 +19,27 @@
     <main>
       <div id="picture">
         <img class="imgs" src="./Images/Sofá.png" alt="" />
+      </div>
+      <div class="botoes">
+        <!--butão pra troca de img pra gif-->
         <button onclick="Rotacion()" class="rodate">
-          <img class="icon" src="./Images/icon-360.svg" alt="" />
+          <img src="./Images/icon-360.svg" alt="" />
+        </button>
+        <!--troca de gif pra img-->
+        <button class="buttonX" onclick="Backimg()">
+          <img class="" src="./Images/icon-close.svg" alt="" />
         </button>
       </div>
+      <!--informações sobre o produto-->
       <div id="infor">
         <p>CÓDIGO: 42404</p>
         <h1>Sofá Margot II - Rosé</h1>
         <h2>R$ 4.000</h2>
         <!--adicionar ao carrinho-->
-        <button class="adc">ADICIONAR À CESTA</button>
+        <button onclick="carrinho()" class="adc">ADICIONAR À CESTA</button>
       </div>
     </main>
+
     <script src="./script.js"></script>
   </body>
 </html>
