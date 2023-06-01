@@ -144,3 +144,10 @@ main {
   background-color: #271A45;
   color: #D9CDF7;
 }
+
+/*responsivel*/
+@media (min-width: 938px ){
+  #picture {
+    position: absolute;
+  }
+}
